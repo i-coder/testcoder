@@ -21,11 +21,19 @@ or add
 
 to the require section of your `composer.json` file.
 
+Добавить в web/main
+```
+ 'modules' => [
+        'testcoder' => [
+            'class' => 'coder\test\testModule',
+        ],
+    ],
+```
 
-Usage
------
+Запустить миграцию
 
-Once the extension is installed, simply use it in your code by  :
+```
+yii migrate --migrationPath=@app/vendor/coder.ept/yii2-testcoder/migrations
+```
 
-```php
-<?= \coder\test\AutoloadExample::widget(); ?>```
+
