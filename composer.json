@@ -1,0 +1,21 @@
+{
+    "name": "testcoder/yii2-testcoder",
+    "description": "Тестовое",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "coder.ept",
+            "email": "coder.ept@gmail.com"
+        }
+    ],
+    "require": {
+        "kartik-v/yii2-widget-select2": "@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "coder\\test\\": ""
+        }
+    }
+}
